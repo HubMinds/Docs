@@ -49,6 +49,9 @@ Elements of implementation
 
 Instructions on how to set up/run your project
 ----------------------
+Clone the github repository
+.. code-block:: bash
+   $ git clone https://github.com/HubMinds/SmartHub-Flutter.git
 
 
 Main Components
