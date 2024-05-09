@@ -44,20 +44,20 @@ Ensure Flutter is installed on your system. If you need to install Flutter, visi
 
 Clone the Repository
 -----------------------
-To set up the project, begin by cloning the HubMinds repository to your local machine:
+To set up the project, begin by cloning the HubMinds repository to your local machine:\
 ``` 
 $ git clone https://github.com/HubMinds/SmartHub-Flutter.git
 $ cd SmartHub-Flutter ```
 
 Install Dependencies
 ----------------------
-Next, install all the necessary dependencies for the project:
+Next, install all the necessary dependencies for the project:\
 ``` 
 $ flutter pub get ```
 
 Pod Install
 -------------------
-Install ios dependencies:
+Install ios dependencies:\
 ``` 
 $ cd ios
 $ pod install
@@ -65,7 +65,7 @@ $ cd .. ```
 
 Run the Application
 --------------------
-Finally, launch the app on a connected device or emulator:
+Finally, launch the app on a connected device or emulator:\
 ``` 
 $ flutter run ```
 
@@ -79,27 +79,27 @@ Ensure you have Python installed on your system. Python 3.8 or newer is recommen
 
 Setup Python Environment
 -------------------------
-It's recommended to use a virtual environment to keep dependencies organized and separate from your main system. Create and activate it with:
+It's recommended to use a virtual environment to keep dependencies organized and separate from your main system. Create and activate it with:\
 ``` 
 $ python3 -m venv env
 $ source env/bin/activate  # On Windows use `env\Scripts\activate` ```
 
 Install Dependencies
 -----------------------
-Install all required Python packages defined in a requirements.txt file:
+Install all required Python packages defined in a requirements.txt file:\
 ``` 
 $ pip install -r requirements.txt ```
 
 Clone the Repository
 -----------------------
-To set up the API, clone the repository to your local machine:
+To set up the API, clone the repository to your local machine:\
 ``` 
 $ git clone -b flask https://github.com/HubMinds/SmartHub-API.git
 $ cd SmartHub-API ```
 
 Run the API
 ----------------------
-On your server or locally, install pm2 and run the app.py:
+On your server or locally, install pm2 and run the app.py:\
 ``` 
 $ pm2 start app.py --name flask-app --interpreter=/path/to/venv/python/binary ```
 
@@ -109,7 +109,7 @@ $ pm2 start "ngrok http 5000" --name ngrok ```
 
 With this method, you will have to replace the source code API url to fit your server.
 
-Firbase:
+Firebase:
 -----------------------
 
 **install the firebase CLI**
