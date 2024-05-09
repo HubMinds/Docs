@@ -1,5 +1,5 @@
-HubMinds
-=======================================
+# HubMinds #
+
 UP2110375
 UP2108568
 UP2110125
@@ -7,12 +7,12 @@ UP2112778
 UP2129277
 UP2054746
 
-Intro
----
+## Intro ##
+
 Welcome to the HubMinds app, your all-in-one solution for staying informed and organized throughout your day! With our Hub, you can effortlessly access key information such as your calendar events, the latest weather updates, and breaking news, all in one convenient place. Whether you're planning your schedule, preparing for the day ahead, or simply staying up-to-date with the world around you, HubMinds makes it easy.
 
-The Scope
-------
+## The Scope ##
+
 We aimed to build an application with four main components: weather, calendar, news, and bus routes. However, we were only able to complete the weather, news, and calendar components:
 
 - **Weather:** We wanted to create an accurate real-time weather forecast that provides temperature, humidity, wind, and more, using an API for real-time data.
@@ -21,8 +21,8 @@ We aimed to build an application with four main components: weather, calendar, n
 
 - **News:** Using an API, we fetch the latest news stories, allowing users to browse headlines and read full articles.
 
-User Requirements
-------------
+## User Requirements ##
+
 1. **Adding Personal Information:** Implement a feature for users to add personalized calendars and reminders.
 
 2. **Interface Preferences:** Develop a modular app with customizable widgets and a notification system to cater to various user preferences.
@@ -31,8 +31,8 @@ User Requirements
 
 4. **User Support and Training:** Implement a tutorial with an opt-out option for users of varying technological proficiency levels.
 
-Instructions on How to Set Up/Run Your Project
-----------------------
+### Instructions on How to Set Up/Run Your Project ###
+
 # Flutter App Setup #
 To get started with the HubMinds app, follow these setup instructions:
 
