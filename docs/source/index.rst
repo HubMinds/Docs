@@ -149,11 +149,11 @@ Main Components
 -----------
 
 - Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates and existing events. Users can easily create new events by tapping on a specific date and time, entering details to describe what the event is. Also, the events are flexible so that once an event is created it can also be deleted by the user. Furthermore, the app also saves the events so if a user logs back in after logging out the events that were created before will still be designated to the specific date. 
-
+\
 - News - Our news function integrates with an API to deliver the latest headlines and articles. Users are greeted with an array of headlines when entering the news section, where they can easily scroll through and select articles of interest. Once the user has selected an article, the user is then displayed the full article from the news source. 
-
+\
 - Weather - Our weather feature uses an API, providing users with real-time weather data and forecasts for their location. Users can access current weather conditions, including temperature, humidity and wind speed. Additionally, the app offers detailed forecasts for future time intervals, in 3-hour segments, allowing users to plan ahead. Temperature and humidity information is displayed alongside images making it simple and easy for the user to understand. 
-
+\
 - Log In - The login page provides an easy to use and secure way for users to access their accounts. Users are prompted to input their registered email address and password into the text fields. There is also a registration button that can allow users to register their email and password, if they are first time users of the app, in order to access the app. Once the required information is entered, the user clicks the login button, and enters the app. The database stores the user email and passwords that are valid log in details.
-
+\
 - Feedback Form - This component works by the user entering the email that they used to access the app and then entering their desired feedback. in the text field suggested. The feedback is then sent to the firebase into a collection named feedback.
