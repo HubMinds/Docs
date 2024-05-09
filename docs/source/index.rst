@@ -9,7 +9,7 @@ UP2054746
 
 Intro
 -----------------
-Welcome to the HubMinds app, your all-in-one solution for staying informed and organized throughout your day! With our Hub, you can effortlessly access key information such as your calendar events, the latest weather updates, and breaking news, all in one convenient place. Whether you're planning your schedule, preparing for the day ahead, or simply staying up-to-date with the world around you, HubMinds makes it easy.
+Welcome to the HubMinds app, we designed this application to be an all-in-one smartphone app that can have all the information that the user would need. With our Hub, you can access the current news storys, the weather forecast in three hour intervals and also a calendar that can be used to plan events. All on a customisable screen.
 
 The Scope
 ------------------
