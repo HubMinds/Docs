@@ -21,7 +21,8 @@ We aimed to build an application with four main components: weather, calendar, n
 
 - **News:** Using an API, we fetch the latest news stories, allowing users to browse headlines and read full articles.
 
-## User Requirements ##
+User Requirements
+-----------------------
 
 1. **Adding Personal Information:** Implement a feature for users to add personalized calendars and reminders.
 
