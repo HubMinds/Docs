@@ -9,7 +9,7 @@ UP2054746
 
 Intro
 ---
-Welcome to the HubMinds app, your all-in-one solution for staying informed and organized throughout your day! With our Hub, you can effortlessly access key information such as your calendar events, the latest weather updates, and breaking news, all in one convenient place. Whether you're planning your schedule, preparing for the day ahead, or simply staying up-to-date with the world around you, HubMinds makes it easy.
+Welcome to the HubMinds app, we designed this application to be an all-in-one smartphone app that can have all the information that the user would need. With our Hub, you can access the current news storys, the weather forecast in three hour intervals and also a calendar that can be used to plan events. All on a customisable screen.
 
 The Scope
 ------
@@ -99,12 +99,12 @@ With this method, you will have to replace the source code API url to fit your s
 Main Components
 -----------
 
-- Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates, days of the week, and existing events. Users can easily create new events by tapping on a specific date and time, entering details as what the event is. They have the flexibility to edit or delete events and view detailed information by clicking on them. 
+- Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates and existing events. Users can easily create new events by tapping on a specific date and time, entering details to describe what the event is. They have the flexibility to edit or delete events and the entered event information by clicking on them. 
 
-- News - Our news function seamlessly integrates with an API to deliver the latest headlines and articles across various categories like world news, business, sports, and entertainment. Users are greeted with an attractive display of headlines upon entering the news section, where they can easily scroll through and select articles of interest. With a simple tap, users can access the full articles.
+- News - Our news function integrates with an API to deliver the latest headlines and articles. Users are greeted with an array of headlines when entering the news section, where they can easily scroll through and select articles of interest. Once the user has selected an article, the user is then displayed the full article from the news source. 
 
-- Weather - Our weather feature uses with an API, providing users with real-time weather data and forecasts for their location. Users can easily access current weather conditions, including temperature, humidity and wind speed. Additionally, the app offers detailed forecasts for future time intervals, in 3-hour segments, allowing users to plan ahead. Temperature and humidity information is prominently displayed, aiding users in assessing comfort levels and the chance of rain. Weather data is presented in visually appealing formats, utilizing icons, colors, and intuitive layouts for easier understanding.
+- Weather - Our weather feature uses an API, providing users with real-time weather data and forecasts for their location. Users can easily access current weather conditions, including temperature, humidity and wind speed. Additionally, the app offers detailed forecasts for future time intervals, in 3-hour segments, allowing users to plan ahead. Temperature and humidity information is displayed alongside images making it simple and easy for the user to understand. 
 
-- Log In - The login page provides a secure gateway for users to access their accounts. Users are prompted to input their registered email address and password into the text fields. There is also a registration button that can allow users to register their email and password in order to access the app. Once the required information is entered, the user clicks the login button, and enters the app. The database stores the user email and passwords that are valid log in details.
+- Log In - The login page provides an easy to use and secure way for users to access their accounts. Users are prompted to input their registered email address and password into the text fields. There is also a registration button that can allow users to register their email and password, if they are first time users of the app, in order to access the app. Once the required information is entered, the user clicks the login button, and enters the app. The database stores the user email and passwords that are valid log in details.
 
-- Feedback Form - This component works by the user entering the email that they used to access the app and then entering their desired feedback in the text field suggested. The feedback is then sent to the firebase into a collection named feedback.
+- Feedback Form - This component works by the user entering the email that they used to access the app and then entering their desired feedback. in the text field suggested. The feedback is then sent to the firebase into a collection named feedback.
