@@ -1,62 +1,140 @@
 HubMinds
 =======================================
--Fin UP2110375
--Jake UP2108568
+UP2110375
+UP2108568
+UP2110125
+UP2112778
+UP2129277
+UP2054746
+
 Intro
 ---
-Welcome to HubMinds app, your all-in-one solution for staying informed and organized throughout your day! With our Hub, you can effortlessly access key information such as your calendar events, the latest weather updates, and breaking news, all in one convenient place. Whether you're planning your schedule, preparing for the day ahead, or simply staying up-to-date with the world around you.
+Welcome to the HubMinds app, your all-in-one solution for staying informed and organized throughout your day! With our Hub, you can effortlessly access key information such as your calendar events, the latest weather updates, and breaking news, all in one convenient place. Whether you're planning your schedule, preparing for the day ahead, or simply staying up-to-date with the world around you, HubMinds makes it easy.
 
 The Scope
 ------
-We aimed to build an application with four main components: weather, calendar, news and bus routes. However, we were only able to complete the weather, news and calendar. 
+We aimed to build an application with four main components: weather, calendar, news, and bus routes. However, we were only able to complete the weather, news, and calendar components:
 
-- Weather - We wanted to create an accurate real time weather forecast that not only provides the temperature but other information like humidity and wind. Also, we planned for it to be able to give forecasts for later in the day not just the current time. This was achieved by using an API to obtain accurate weather forecasts for the requested location.
+- **Weather:** We wanted to create an accurate real-time weather forecast that provides temperature, humidity, wind, and more, using an API for real-time data.
 
-- Calendar - The calendar was intended to not only be a standard calendar that displays the current date but also to be interactive. Events can be added onto specific dates and times. Furthermore, descriptions for the events can be added aswell allowing the user to store their own specific events.
+- **Calendar:** The calendar is not just a standard display but interactive, allowing users to add and manage events with detailed descriptions.
 
-- News - An API was used to scrape the internet in order to obtain the latest news stories. The user can scroll throught the headlines and select any of them, this will in turn take the user to the full article. 
+- **News:** Using an API, we fetch the latest news stories, allowing users to browse headlines and read full articles.
 
-
-The user requirements 
+User Requirements
 ------------
-1. Adding Personal Information
-User Feedback: Users expressed a strong desire to add their own information, such as a personalised calendar and reminders.
-Analysis: The majority favours a modular approach, allowing users to customise the hub with their own content.
-System Requirement: Implement a feature enabling users to add personalised information, including calendars, reminders, and customizable content on the hub.
+1. **Adding Personal Information:** Implement a feature for users to add personalized calendars and reminders.
 
-2. Interface Preferences
-User Feedback: Preferences for interface vary based on demographics, with professionals favouring widgets and seniors preferring simplicity.
-Analysis: Almost all users wanted a modular app to avoid redundant data in regards to their needs but different ages and professionalism of users wanted to source the data in different ways such as notifications and widgets.
-System Requirement: Develop both a modular app that is complimented by a customisable home screen widget and a push notification system to cater to diverse preferences.
-Implementation: The user will be able to select what order they want the data to appear on the screen in and how they want it to be displayed.
+2. **Interface Preferences:** Develop a modular app with customizable widgets and a notification system to cater to various user preferences.
 
-3. Morning Check Routine
-User Feedback: Varied morning routines, including checking weather, news, and schedules.
-Analysis: Users prioritise different information based on their roles and responsibilities.
-System Requirement: Provide real-time weather updates, customizable news feeds, and modular widgets for personalised morning check routines.
-Implementation: The user will be able to select what time they want the roundup or they can select to not have it at all
+3. **Morning Check Routine:** Provide tools for a personalized morning routine with real-time updates on weather, news, and schedules.
 
-4. User Support and Training
-User Feedback: Mixed opinions on tutorials, with a preference for an option to opt-out.
-Analysis: Acknowledgment of varying user proficiency levels.
-System Requirement: Implement a tutorial with an opt-out option to enhance accessibility for users with different levels of technological familiarity.
-Implementation: A opt-out tutorial on first login while remaining accessible whenever, additionally a support form for specific problems
+4. **User Support and Training:** Implement a tutorial with an opt-out option for users of varying technological proficiency levels.
 
-
-Elements of implementation
------------
-
-
-Instructions on how to set up/run your project
+Instructions on How to Set Up/Run Your Project
 ----------------------
+### Flutter App Setup
+To get started with the HubMinds app, follow these setup instructions:
+
+#### Prerequisites
+Ensure Flutter is installed on your system. If you need to install Flutter, visit the [Flutter installation guide](https://flutter.dev/docs/get-started/install).
+
+#### Clone the Repository
+To set up the project, begin by cloning the HubMinds repository to your local machine:
+```bash
+$ git clone https://github.com/HubMinds/SmartHub-Flutter.git
+$ cd SmartHub-Flutter
+
+#### Install Dependencies
+Next, install all the necessary dependencies for the project:
+```bash
+$ flutter pub get
+
+#### Pod Install
+Install ios dependencies:
+```bash
+$ cd ios
+$ pod install
+$ cd ..
+
+#### Run the Application
+Finally, launch the app on a connected device or emulator:
+```bash
+$ flutter run
+
+### Python API Setup
+To set up the backend API for HubMinds, which handles data fetching and processing, follow these instructions:
+
+#### Prerequisites
+Ensure you have Python installed on your system. Python 3.8 or newer is recommended. You also need pip for managing Python packages.
+
+#### Setup Python Environment
+It's recommended to use a virtual environment to keep dependencies organized and separate from your main system. Create and activate it with:
+```bash
+$ python3 -m venv env
+$ source env/bin/activate  # On Windows use `env\Scripts\activate`
+
+#### Install Dependencies
+Install all required Python packages defined in a requirements.txt file:
+```bash
+$ pip install -r requirements.txt
+
+#### Clone the Repository
+To set up the API, clone the repository to your local machine:
+```bash
+$ git clone -b flask https://github.com/HubMinds/SmartHub-API.git
+$ cd SmartHub-API
+
+#### Run the API
+On your server or locally, install pm2 and run the app.py:
+```bash
+$ pm2 start app.py --name flask-app --interpreter=/path/to/venv/python/binary
+
+For a simple way to make the API internet facing, use ngrok:
+```bash
+$ pm2 start "ngrok http 5000" --name ngrok
+
+With this method, you will have to replace the source code API url to fit your server.
+
+#### In case the Firebase is not linked properly here is how to link it
+
+#### install the firebase CLI
+```bash
+$ https://firebase.google.com/docs/cli#setup_update_cli
+
+#### login to firebase CLI
+```bash
+$ firebase login
+#### hubminds
+
+#### install flutterFire
+```bash
+$ dart pub global activate flutterfire_cli
+
+#### configure FlutterFire in the directory containing your project
+```bash
+$ flutterfire configure
+
+#### From your Flutter project directory, run the following command to install the core plugin:
+```bash
+$ flutter pub add firebase_core
+
+#### From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date:
+```bash
+$ flutterfire configure
+
+#### After these changes it should run 
 
 
 Main Components
 -----------
 
-- Calendar - 
-The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates, days of the week, and existing events. Users can easily create new events by tapping on a specific date and time, entering details as what the event is. They have the flexibility to edit or delete events and view detailed information by clicking on them. 
+- Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates, days of the week, and existing events. Users can easily create new events by tapping on a specific date and time, entering details as what the event is. They have the flexibility to edit or delete events and view detailed information by clicking on them. 
 
 - News - Our news function seamlessly integrates with an API to deliver the latest headlines and articles across various categories like world news, business, sports, and entertainment. Users are greeted with an attractive display of headlines upon entering the news section, where they can easily scroll through and select articles of interest. With a simple tap, users can access the full articles.
 
 - Weather - Our weather feature uses with an API, providing users with real-time weather data and forecasts for their location. Users can easily access current weather conditions, including temperature, humidity and wind speed. Additionally, the app offers detailed forecasts for future time intervals, in 3-hour segments, allowing users to plan ahead. Temperature and humidity information is prominently displayed, aiding users in assessing comfort levels and the chance of rain. Weather data is presented in visually appealing formats, utilizing icons, colors, and intuitive layouts for easier understanding.
+
+- Log In - The login page provides a secure gateway for users to access their accounts. Users are prompted to input their registered email address and password into the text fields. There is also a registration button that can allow users to register their email and password in order to access the app. Once the required information is entered, the user clicks the login button, and enters the app. The database stores the user email and passwords that are valid log in details.
+
+- Feedback Form - This component works by the user entering the email that they used to access the app and then entering their desired feedback in the text field suggested. The feedback is then sent to the firebase into a collection named feedback.
