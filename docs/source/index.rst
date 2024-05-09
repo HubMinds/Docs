@@ -33,97 +33,96 @@ User Requirements
 
 Instructions on How to Set Up/Run Your Project
 ----------------------
-### Flutter App Setup
+# Flutter App Setup
 To get started with the HubMinds app, follow these setup instructions:
 
-#### Prerequisites
+# Prerequisites
 Ensure Flutter is installed on your system. If you need to install Flutter, visit the [Flutter installation guide](https://flutter.dev/docs/get-started/install).
 
-#### Clone the Repository
+# Clone the Repository
 To set up the project, begin by cloning the HubMinds repository to your local machine:
-```bash
+``` bash
 $ git clone https://github.com/HubMinds/SmartHub-Flutter.git
-$ cd SmartHub-Flutter
+$ cd SmartHub-Flutter ```
 
-#### Install Dependencies
+# Install Dependencies
 Next, install all the necessary dependencies for the project:
-```bash
-$ flutter pub get
+``` bash
+$ flutter pub get ```
 
-#### Pod Install
+# Pod Install
 Install ios dependencies:
-```bash
+``` bash
 $ cd ios
 $ pod install
-$ cd ..
+$ cd .. ```
 
-#### Run the Application
+# Run the Application
 Finally, launch the app on a connected device or emulator:
-```bash
-$ flutter run
+``` bash
+$ flutter run ```
 
-### Python API Setup
+# Python API Setup
 To set up the backend API for HubMinds, which handles data fetching and processing, follow these instructions:
 
-#### Prerequisites
+# Prerequisites
 Ensure you have Python installed on your system. Python 3.8 or newer is recommended. You also need pip for managing Python packages.
 
-#### Setup Python Environment
+# Setup Python Environment
 It's recommended to use a virtual environment to keep dependencies organized and separate from your main system. Create and activate it with:
-```bash
+``` bash
 $ python3 -m venv env
-$ source env/bin/activate  # On Windows use `env\Scripts\activate`
+$ source env/bin/activate  # On Windows use `env\Scripts\activate` ```
 
-#### Install Dependencies
+# Install Dependencies
 Install all required Python packages defined in a requirements.txt file:
-```bash
-$ pip install -r requirements.txt
+``` bash
+$ pip install -r requirements.txt ```
 
-#### Clone the Repository
+# Clone the Repository
 To set up the API, clone the repository to your local machine:
-```bash
+``` bash
 $ git clone -b flask https://github.com/HubMinds/SmartHub-API.git
-$ cd SmartHub-API
+$ cd SmartHub-API ```
 
-#### Run the API
+# Run the API
 On your server or locally, install pm2 and run the app.py:
-```bash
-$ pm2 start app.py --name flask-app --interpreter=/path/to/venv/python/binary
+``` bash
+$ pm2 start app.py --name flask-app --interpreter=/path/to/venv/python/binary ```
 
 For a simple way to make the API internet facing, use ngrok:
-```bash
-$ pm2 start "ngrok http 5000" --name ngrok
+``` bash
+$ pm2 start "ngrok http 5000" --name ngrok ```
 
 With this method, you will have to replace the source code API url to fit your server.
 
-#### In case the Firebase is not linked properly here is how to link it
+# In case the Firebase is not linked properly here is how to link it
 
-#### install the firebase CLI
+# install the firebase CLI
+``` bash
+$ https://firebase.google.com/docs/cli#setup_update_cli ```
+
+# login to firebase CLI
+``` bash
+$ firebase login ```
+
+# install flutterFire
+``` bash
+$ dart pub global activate flutterfire_cli ```
+
+# configure FlutterFire in the directory containing your project
+``` bash
+$ flutterfire configure ```
+
+# From your Flutter project directory, run the following command to install the core plugin:
+``` bash
+$ flutter pub add firebase_core ```
+
+# From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date:
 ```bash
-$ https://firebase.google.com/docs/cli#setup_update_cli
+$ flutterfire configure ```
 
-#### login to firebase CLI
-```bash
-$ firebase login
-#### hubminds
-
-#### install flutterFire
-```bash
-$ dart pub global activate flutterfire_cli
-
-#### configure FlutterFire in the directory containing your project
-```bash
-$ flutterfire configure
-
-#### From your Flutter project directory, run the following command to install the core plugin:
-```bash
-$ flutter pub add firebase_core
-
-#### From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date:
-```bash
-$ flutterfire configure
-
-#### After these changes it should run 
+# After these changes it should run 
 
 
 Main Components
