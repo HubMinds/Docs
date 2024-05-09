@@ -33,59 +33,59 @@ User Requirements
 
 Instructions on How to Set Up/Run Your Project
 ----------------------
-# Flutter App Setup
+# Flutter App Setup #
 To get started with the HubMinds app, follow these setup instructions:
 
-# Prerequisites
+# Prerequisites #
 Ensure Flutter is installed on your system. If you need to install Flutter, visit the [Flutter installation guide](https://flutter.dev/docs/get-started/install).
 
-# Clone the Repository
+# Clone the Repository #
 To set up the project, begin by cloning the HubMinds repository to your local machine:
 ``` 
 $ git clone https://github.com/HubMinds/SmartHub-Flutter.git
 $ cd SmartHub-Flutter ```
 
-# Install Dependencies
+# Install Dependencies #
 Next, install all the necessary dependencies for the project:
 ``` 
 $ flutter pub get ```
 
-# Pod Install
+# Pod Install #
 Install ios dependencies:
 ``` 
 $ cd ios
 $ pod install
 $ cd .. ```
 
-# Run the Application
+# Run the Application #
 Finally, launch the app on a connected device or emulator:
 ``` 
 $ flutter run ```
 
-# Python API Setup
+# Python API Setup #
 To set up the backend API for HubMinds, which handles data fetching and processing, follow these instructions:
 
-# Prerequisites
+# Prerequisites #
 Ensure you have Python installed on your system. Python 3.8 or newer is recommended. You also need pip for managing Python packages.
 
-# Setup Python Environment
+# Setup Python Environment #
 It's recommended to use a virtual environment to keep dependencies organized and separate from your main system. Create and activate it with:
 ``` 
 $ python3 -m venv env
 $ source env/bin/activate  # On Windows use `env\Scripts\activate` ```
 
-# Install Dependencies
+# Install Dependencies #
 Install all required Python packages defined in a requirements.txt file:
 ``` 
 $ pip install -r requirements.txt ```
 
-# Clone the Repository
+# Clone the Repository #
 To set up the API, clone the repository to your local machine:
 ``` 
 $ git clone -b flask https://github.com/HubMinds/SmartHub-API.git
 $ cd SmartHub-API ```
 
-# Run the API
+# Run the API #
 On your server or locally, install pm2 and run the app.py:
 ``` 
 $ pm2 start app.py --name flask-app --interpreter=/path/to/venv/python/binary ```
@@ -96,33 +96,33 @@ $ pm2 start "ngrok http 5000" --name ngrok ```
 
 With this method, you will have to replace the source code API url to fit your server.
 
-# In case the Firebase is not linked properly here is how to link it
+# In case the Firebase is not linked properly here is how to link it #
 
 # install the firebase CLI
 ``` 
 $ https://firebase.google.com/docs/cli#setup_update_cli ```
 
-# login to firebase CLI
+# login to firebase CLI #
 ``` 
 $ firebase login ```
 
-# install flutterFire
+# install flutterFire #
 ``` 
 $ dart pub global activate flutterfire_cli ```
 
-# configure FlutterFire in the directory containing your project
+# configure FlutterFire in the directory containing your project #
 ``` 
 $ flutterfire configure ```
 
-# From your Flutter project directory, run the following command to install the core plugin:
+# From your Flutter project directory, run the following command to install the core plugin: #
 ``` 
 $ flutter pub add firebase_core ```
 
-# From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date:
+# From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date: #
 ```
 $ flutterfire configure ```
 
-# After these changes it should run 
+# After these changes it should run #
 
 
 Main Components
