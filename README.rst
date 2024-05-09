@@ -1,7 +1,11 @@
 HubMinds
 =======================================
--Fin UP2110375
--Jake UP2108568
+UP2110375
+UP2108568
+UP2110125
+UP2112778
+UP2129277
+UP2054746
 
 Intro
 ---
@@ -100,3 +104,7 @@ Main Components
 - News - Our news function seamlessly integrates with an API to deliver the latest headlines and articles across various categories like world news, business, sports, and entertainment. Users are greeted with an attractive display of headlines upon entering the news section, where they can easily scroll through and select articles of interest. With a simple tap, users can access the full articles.
 
 - Weather - Our weather feature uses with an API, providing users with real-time weather data and forecasts for their location. Users can easily access current weather conditions, including temperature, humidity and wind speed. Additionally, the app offers detailed forecasts for future time intervals, in 3-hour segments, allowing users to plan ahead. Temperature and humidity information is prominently displayed, aiding users in assessing comfort levels and the chance of rain. Weather data is presented in visually appealing formats, utilizing icons, colors, and intuitive layouts for easier understanding.
+
+- Log In - The login page provides a secure gateway for users to access their accounts. Users are prompted to input their registered email address and password into the text fields. There is also a registration button that can allow users to register their email and password in order to access the app. Once the required information is entered, the user clicks the login button, and enters the app. The database stores the user email and passwords that are valid log in details.
+
+- Feedback Form - This component works by the user entering the email that they used to access the app and then entering their desired feedback in the text field suggested. The feedback is then sent to the firebase into a collection named feedback.
