@@ -99,7 +99,7 @@ With this method, you will have to replace the source code API url to fit your s
 Main Components
 -----------
 
-- Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates and existing events. Users can easily create new events by tapping on a specific date and time, entering details to describe what the event is. They have the flexibility to edit or delete events and the entered event information by clicking on them. 
+- Calendar - The calendar feature in our app provides users with a clean and visually appealing interface, displaying dates and existing events. Users can easily create new events by tapping on a specific date and time, entering details to describe what the event is.
 
 - News - Our news function integrates with an API to deliver the latest headlines and articles. Users are greeted with an array of headlines when entering the news section, where they can easily scroll through and select articles of interest. Once the user has selected an article, the user is then displayed the full article from the news source. 
 
