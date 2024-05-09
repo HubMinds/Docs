@@ -112,37 +112,37 @@ With this method, you will have to replace the source code API url to fit your s
 Firbase:
 -----------------------
 
-** install the firebase CLI **
+**install the firebase CLI**
 
 ``` 
 $ https://firebase.google.com/docs/cli#setup_update_cli ```
 
-** login to firebase CLI **
+**login to firebase CLI**
 
 ``` 
 $ firebase login ```
 
-** install flutterFire **
+**install flutterFire**
 
 ``` 
 $ dart pub global activate flutterfire_cli ```
 
-** configure FlutterFire in the directory containing your project **
+**configure FlutterFire in the directory containing your project**
 
 ``` 
 $ flutterfire configure ```
 
-** From your Flutter project directory, run the following command to install the core plugin: **
+**From your Flutter project directory, run the following command to install the core plugin:**
 
 ``` 
 $ flutter pub add firebase_core ```
 
-** From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date: **
+**From your Flutter project directory, run the following command to ensure that your Flutter app's Firebase configuration is up-to-date:**
 
 ```
 $ flutterfire configure ```
 
-** After these changes it should run **
+**After these changes it should run**
 
 
 Main Components
